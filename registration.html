@@ -4,6 +4,72 @@
 	<title>Registration Page</title>
 </head>
 <body>
+	<h1>Register</h1>
 
+	<!-- Form begins here -->
+	<form>
+		<!-- First name and last name with no validations -->
+		<label for="firstName">First Name:</label>
+		<input type="text" name="firstName" placeholder="John" required>
+
+		<label for="lastName">Last Name:</label>
+		<input type="text" name="lastName" placeholder="Smith">		
+
+		</br></br>
+		
+		<!-- Radio buttons to select gender-->
+		<label for="genderChoice">Male</label>
+		<input type="Radio" name="genderChoice">
+
+		<label for="genderChoice">Female</label>
+		<input type="Radio" name="genderChoice">
+
+		<label for="genderChoice">Other</label>
+		<input type="Radio" name="genderChoice">
+
+		</br></br>
+
+		<!-- Email  -->
+		<label for="email">Email:</label>
+		<input type="Email" name="email" placeholder="your email" required>
+
+		<!-- Password  with validation of mininmum 8 characters-->
+		<label for="password">Password:</label>
+		<input type="password" name="password" required pattern=".{8,}" title="minimum 8 characters">
+
+		</br></br>
+
+		<!-- Birthay from drop down -->
+		<label for="birthday_month">Birthday:</label>
+		<select name="birthday_month">
+			<option value="">Month</option>
+			<option value="January">Jan</option>
+			<option value="February">Feb</option>
+			<option value="March">Mar</option>
+		</select>
+		<select name="birthday_day">
+			<option value="">Day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select name="birthday_year">
+			<option value="">Year</option>
+			<option value="1995">1995</option>
+			<option value="1996">1996</option>
+			<option value="1997">1997</option>
+		</select>
+
+		</br></br>
+
+		<!-- Confirmation -->
+		I agree to the terms and conditions 
+		<input type="checkbox" name="agreed" value="yes">
+
+		</br></br>
+
+		<!-- Submit button -->
+		<input type="Submit" name="submit">
+	</form>
 </body>
 </html>
