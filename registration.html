@@ -8,15 +8,16 @@
 
 	<!-- Form begins here -->
 	<form>
+		<div>
 		<!-- First name and last name with no validations -->
 		<label for="firstName">First Name:</label>
 		<input type="text" id="firstName" name="firstName" placeholder="John" required>
 
 		<label for="lastName">Last Name:</label>
 		<input type="text" id="lastName" name="lastName" placeholder="Smith">		
-
-		</br></br>
+		</div>
 		
+		<div>
 		<!-- Radio buttons to select gender-->
 		<label for="male">Male</label>
 		<input type="Radio" id="male" name="genderChoice">
@@ -26,9 +27,9 @@
 
 		<label for="other">Other</label>
 		<input type="Radio" id="other" name="genderChoice">
+		</div>
 
-		</br></br>
-
+		<div>
 		<!-- Email  -->
 		<label for="email">Email:</label>
 		<input type="Email" id="email" name="email" placeholder="your email" required>
@@ -36,9 +37,9 @@
 		<!-- Password  with validation of mininmum 8 characters-->
 		<label for="password">Password:</label>
 		<input type="password" id="password" name="password" required pattern=".{8,}" title="minimum 8 characters">
-
-		</br></br>
-
+		</div>
+		
+		<div>
 		<!-- Birthay from drop down -->
 		<label for="birthday">Birthday:</label>
 		<select id = "birthday" name="birthday_month">
@@ -59,15 +60,14 @@
 			<option value="1996">1996</option>
 			<option value="1997">1997</option>
 		</select>
+		</div>
 
-		</br></br>
-
+		<div>
 		<!-- Confirmation -->
 		I agree to the terms and conditions 
 		<input type="checkbox" name="agreed" value="yes">
-
-		</br></br>
-
+		</div>
+		
 		<!-- Submit button -->
 		<input type="Submit" name="submit">
 	</form>
