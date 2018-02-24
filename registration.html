@@ -10,38 +10,38 @@
 	<form>
 		<!-- First name and last name with no validations -->
 		<label for="firstName">First Name:</label>
-		<input type="text" name="firstName" placeholder="John" required>
+		<input type="text" id="firstName" name="firstName" placeholder="John" required>
 
 		<label for="lastName">Last Name:</label>
-		<input type="text" name="lastName" placeholder="Smith">		
+		<input type="text" id="lastName" name="lastName" placeholder="Smith">		
 
 		</br></br>
 		
 		<!-- Radio buttons to select gender-->
-		<label for="genderChoice">Male</label>
-		<input type="Radio" name="genderChoice">
+		<label for="male">Male</label>
+		<input type="Radio" id="male" name="genderChoice">
 
-		<label for="genderChoice">Female</label>
-		<input type="Radio" name="genderChoice">
+		<label for="female">Female</label>
+		<input type="Radio" id="female" name="genderChoice">
 
-		<label for="genderChoice">Other</label>
-		<input type="Radio" name="genderChoice">
+		<label for="other">Other</label>
+		<input type="Radio" id="other" name="genderChoice">
 
 		</br></br>
 
 		<!-- Email  -->
 		<label for="email">Email:</label>
-		<input type="Email" name="email" placeholder="your email" required>
+		<input type="Email" id="email" name="email" placeholder="your email" required>
 
 		<!-- Password  with validation of mininmum 8 characters-->
 		<label for="password">Password:</label>
-		<input type="password" name="password" required pattern=".{8,}" title="minimum 8 characters">
+		<input type="password" id="password" name="password" required pattern=".{8,}" title="minimum 8 characters">
 
 		</br></br>
 
 		<!-- Birthay from drop down -->
-		<label for="birthday_month">Birthday:</label>
-		<select name="birthday_month">
+		<label for="birthday">Birthday:</label>
+		<select id = "birthday" name="birthday_month">
 			<option value="">Month</option>
 			<option value="January">Jan</option>
 			<option value="February">Feb</option>
